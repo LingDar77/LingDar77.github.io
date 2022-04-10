@@ -1,0 +1,77 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+
+input,
+button {
+    outline: none;
+    border: 0;
+}
+
+image {
+    border: 0;
+    vertical-align: middle;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font: normal 400 16px "Microsoft yahei";
+}
+
+.SingleLine {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.MultiLines2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.ClearFloat {
+    *zoom: 1;
+}
+
+.ClearFloat::after,
+.ClearFloat::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.FL {
+    float: left;
+}
+
+.FR {
+    float: right;
+}
+
+.Hide {
+    display: none;
+}

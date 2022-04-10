@@ -1,39 +1,61 @@
-* {
-    padding: 0px;
-    margin: 0px;
+body {
+    background: url("..\\res\\bg.jpg") no-repeat fixed;
 }
 
-.top,
-.content,
-.buttom {
-    margin: 0 10%;
-}
-
-.top {
-    background-color: pink;
-    height: 40px;
-}
-
-.content {
-    background-color: #fcfcfc;
-    height: 960px;
-}
-
-.content-left {
-    background-color: grey;
-    width: 40%;
-    height: 100%;
-    float: left;
-}
-
-.content-right {
-    background-color: orange;
-    width: 60%;
-    height: 100%;
-    float: left;
-}
-
-.buttom {
-    background-color: #f2f2f2;
+.float {
+    border: 1px solid red;
+    width: 19%;
     height: 80px;
+    margin-right: 1%;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+    transition: filter 0.3s;
+}
+
+.float:hover {
+    filter: blur(0.8px);
+}
+
+.container {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.outer {
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+}
+
+.box {
+    width: 100px;
+    height: 2.6em;
+    background-color: pink;
+}
+
+.ProgressBar {
+    width: 100px;
+    height: 20px;
+    border: 1px solid red;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.ProgressBar div {
+    width: 0px;
+    height: 0px;
+    background: rgba(255, 0, 0, 0.5);
+    border-radius: 8px;
+    transition: height, 0.2s, width 1s ease-in-out, background 1s ease-in-out;
+}
+
+.ProgressBar:hover div {
+    width: 100px;
+    height: 18px;
+    background: rgba(255, 0, 0, 1);
+    border-bottom-right-radius: 8px;
 }
