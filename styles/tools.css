@@ -1,7 +1,16 @@
 * {
+    position: relative;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+}
+
+image,
+a {
+    -webkit-touch-callout: none;
 }
 
 em,
@@ -70,6 +79,10 @@ body {
 
 .FR {
     float: right;
+}
+
+.Flex {
+    display: flex;
 }
 
 .Hide {

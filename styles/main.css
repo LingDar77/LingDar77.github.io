@@ -1,61 +1,46 @@
 body {
-    background: url("..\\res\\bg.jpg") no-repeat fixed;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  height: 2000px;
 }
-
-.float {
-    border: 1px solid red;
-    width: 19%;
-    height: 80px;
-    margin-right: 1%;
-    margin-bottom: 10px;
-    float: left;
-    position: relative;
-    transition: filter 0.3s;
+body .TopBar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-size: 0;
+  width: 90vw;
+  height: 4vw;
 }
-
-.float:hover {
-    filter: blur(0.8px);
+body .TopBar .Icon {
+  overflow: hidden;
+  height: 4vw;
+  width: 10vw;
 }
-
-.container {
-    margin-top: 10px;
-    overflow: hidden;
+body .TopBar .Icon a {
+  position: absolute;
+  top: -3vw;
+  left: 0;
+  width: 10vw;
+  height: 10vw;
+  background: url(../res/favicon.ico);
+  background-size: 100%;
 }
-
-.outer {
-    width: 40px;
-    height: 40px;
-    background-color: pink;
-    position: absolute;
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
+body .TopBar .Nav {
+  position: absolute;
+  top: 0;
+  left: 10vw;
+  flex-direction: row;
+  justify-content: center;
+  width: 80vw;
+  height: 4vw;
+  font-size: 1rem;
 }
-
-.box {
-    width: 100px;
-    height: 2.6em;
-    background-color: pink;
+body .TopBar .Nav .NavItem {
+  flex: 1;
+  border: 1px solid pink;
 }
-
-.ProgressBar {
-    width: 100px;
-    height: 20px;
-    border: 1px solid red;
-    margin-top: 10px;
-    border-radius: 8px;
-}
-
-.ProgressBar div {
-    width: 0px;
-    height: 0px;
-    background: rgba(255, 0, 0, 0.5);
-    border-radius: 8px;
-    transition: height, 0.2s, width 1s ease-in-out, background 1s ease-in-out;
-}
-
-.ProgressBar:hover div {
-    width: 100px;
-    height: 18px;
-    background: rgba(255, 0, 0, 1);
-    border-bottom-right-radius: 8px;
+body #btn {
+  background-color: pink;
+  width: 100px;
+  height: 50px;
 }
