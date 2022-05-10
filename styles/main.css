@@ -1,5 +1,5 @@
 body {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5) url("../res/bg.jpg") fixed no-repeat 100% 100%;
   line-height: 1.5;
   height: 2000px;
 }
@@ -43,4 +43,35 @@ body #btn {
   background-color: pink;
   width: 100px;
   height: 50px;
+}
+body .p {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  display: none;
+}
+body .p .s {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+body table {
+  border: 1px solid pink;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+}
+body form {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  background-color: #ccc;
+  border: 1px pink;
+}
+body input {
+  -webkit-appearance: button;
+}
+body input[type=button] {
+  background-color: pink;
 }

@@ -1,10 +1,8 @@
-let hadler1 = EventHandler.BindEvent(".Icon", "click", function ()
+let hadler1 = EventHandler.BindEvent(".Icon", "click", function (e)
 {
     alert("hello");
 });
-EventHandler.BindEvent(".Icon", "click", function ()
-{
-    alert("world");
-});
-
-let a = document.querySelector("");
+// EventHandler.BindEvent(".Icon", "click", function ()
+// {
+//     alert("world");
+// });

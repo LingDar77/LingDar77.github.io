@@ -1,3 +1,4 @@
+"use strict"
 let EventHandler = {
     events: new Array(),
     /**
@@ -69,7 +70,11 @@ let EventHandler = {
 
         }
         console.log(EventHandler);
-    }
+    },
+    [Symbol.for("???")]()
+    {
+
+    },
 };
 
 

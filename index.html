@@ -6,14 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no" />
     <title>咸鱼收容所-论咸鱼的自我修养</title>
+
     <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon" />
+
+    <!-- Css -->
     <link rel="stylesheet" href="styles/tools.css" />
     <link rel="stylesheet" href="styles/animes.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <script src="scripts/EventHandler.js">
-    </script>
-    <script src="scripts/main.js">
-    </script>
+
+    <!-- Script -->
+    <script src="libs/jquery-3.6.0.js"></script>
+    <script src="scripts/EventHandler.js"></script>
+    <script src="scripts/main.js"></script>
+
 </head>
 
 <body>
@@ -35,20 +40,63 @@
 
     </div>
     <button id="btn">asd</button>
+    <div class="p">
+        <div class="s"></div>
+    </div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                <td>e</td>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="post" action="index.html">
+        <ul>
+            <li>Name: <input type="text" name="name" id="name">
+            </li>
+            <li>Password: <input type="password" name="password" id="password"></li>
+            <li>Gender: <input type="radio" name="Gender" value="Male">Male<input type="radio" name="Gender"
+                    value="Female">Female
+            </li>
+            <li><input type="file" value="file"><input type="button" value="submit"></li>
+        </ul>
+    </form>
 
     <script>
-        document.getElementById("btn").addEventListener("click", function ()
-        {
-            let icon = document.querySelector(".Icon");
-            console.log(icon.offsetHeight);
-            console.log("update");
-            hadler1.forbiddened = true;
-            EventHandler.BindEvent(".Icon", "click", function ()
-            {
-                alert("ababa");
-            });
-            EventHandler.UpdateEvents();
-        });</script>
+        // document.getElementById("btn").addEventListener("click", function ()
+        // {
+
+        //     hadler1.forbiddened = true;
+        //     EventHandler.BindEvent(".Icon", "click", function ()
+        //     {
+        //         alert("ababa");
+        //     });
+        //     EventHandler.UpdateEvents();
+        // });
+
+        $("input[type=button]").click(function (e) { console.log(e); });
+        let { events } = EventHandler;
+        console.log(events);
+
+    </script>
+
 </body>
 
 </html>
