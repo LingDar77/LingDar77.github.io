@@ -1,102 +1,21 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no" />
-    <title>咸鱼收容所-论咸鱼的自我修养</title>
-
-    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon" />
-
-    <!-- Css -->
-    <link rel="stylesheet" href="styles/tools.css" />
-    <link rel="stylesheet" href="styles/animes.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-
-    <!-- Script -->
-    <script src="libs/jquery-3.6.0.js"></script>
-    <script src="scripts/EventHandler.js"></script>
-    <script src="scripts/main.js"></script>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="./favicon.ico">
+    <title>vue-demo-calendar</title>
+    <script defer="defer" src="./js/chunk-vendors.ea72cc4c.js"></script>
+    <script defer="defer" src="./js/app.c4165bb6.js"></script>
+    <link href="./css/chunk-vendors.8b353cc4.css" rel="stylesheet">
+    <link href="./css/app.b9baa076.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- TopBar -->
-    <div class="TopBar">
-        <!-- Icon -->
-        <h1 class="Icon">
-            <a href="index.html" title="咸鱼收容所-论咸鱼的自我修养">咸鱼收容所-论咸鱼的自我修养</a>
-        </h1>
-        <!-- Nav -->
-        <div class="Nav Flex">
-            <div class="NavItem">1</div>
-            <div class="NavItem">2</div>
-            <div class="NavItem">3</div>
-            <div class="NavItem">4</div>
-            <div class="NavItem">5</div>
-            <div class="NavItem">6</div>
-        </div>
-
-    </div>
-    <button id="btn">asd</button>
-    <div class="p">
-        <div class="s"></div>
-    </div>
-
-
-    <table>
-        <thead>
-            <tr>
-                <td>a</td>
-                <td>b</td>
-                <td>c</td>
-                <td>d</td>
-                <td>e</td>
-            </tr>
-
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <form action="post" action="index.html">
-        <ul>
-            <li>Name: <input type="text" name="name" id="name">
-            </li>
-            <li>Password: <input type="password" name="password" id="password"></li>
-            <li>Gender: <input type="radio" name="Gender" value="Male">Male<input type="radio" name="Gender"
-                    value="Female">Female
-            </li>
-            <li><input type="file" value="file"><input type="button" value="submit"></li>
-        </ul>
-    </form>
-
-    <script>
-        // document.getElementById("btn").addEventListener("click", function ()
-        // {
-
-        //     hadler1.forbiddened = true;
-        //     EventHandler.BindEvent(".Icon", "click", function ()
-        //     {
-        //         alert("ababa");
-        //     });
-        //     EventHandler.UpdateEvents();
-        // });
-
-        $("input[type=button]").click(function (e) { console.log(e); });
-        let { events } = EventHandler;
-        console.log(events);
-
-    </script>
-
+<body><noscript><strong>We're sorry but vue-demo-calendar doesn't work properly without JavaScript enabled. Please
+            enable it to continue.</strong></noscript>
+    <div id="app"></div>
 </body>
 
 </html>
